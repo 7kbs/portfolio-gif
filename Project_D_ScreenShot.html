@@ -4,17 +4,35 @@
   <meta charset="UTF-8" />
   <title>GIF Showcase</title>
   <style>
-    body { background:#111; color:#fff; text-align:center; font-family:sans-serif; }
-    img { width:400px; margin:10px; border-radius:8px; }
+    body { 
+      background:#111; 
+      color:#fff; 
+      text-align:center; 
+      font-family:sans-serif; 
+    }
+    video {
+      width: 400px; 
+      margin: 10px; 
+      border-radius: 8px; 
+      display: inline-block; /* 줄바꿈 방지, 나란히 가능 */
+    }
+    .video-container {
+      display: flex;
+      flex-wrap: wrap; /* 화면 크기 맞춰 줄바꿈 */
+      justify-content: center;
+      gap: 10px;
+    }
   </style>
 </head>
 <body>
   <h1>🎮 Gameplay Showcase</h1>
-  <video src="gameplay1.mp4" autoplay loop muted playsinline width="400"></video>
-  <video src="gameplay2.mp4" autoplay loop muted playsinline width="400"></video>
-  <video src="gameplay3.mp4" autoplay loop muted playsinline width="400"></video>
-  <video src="gameplay4.mp4" autoplay loop muted playsinline width="400"></video>
-  <video src="gameplay5.mp4" autoplay loop muted playsinline width="400"></video>
-  <video src="gameplay6.mp4" autoplay loop muted playsinline width="400"></video>
+  <div class="video-container">
+    <video src="gameplay1.mp4" autoplay loop muted playsinline></video>
+    <video src="gameplay2.mp4" autoplay loop muted playsinline></video>
+    <video src="gameplay3.mp4" autoplay loop muted playsinline></video>
+    <video src="gameplay4.mp4" autoplay loop muted playsinline></video>
+    <video src="gameplay5.mp4" autoplay loop muted playsinline></video>
+    <video src="gameplay6.mp4" autoplay loop muted playsinline></video>
+  </div>
 </body>
 </html>
